@@ -2,9 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
@@ -28,7 +26,7 @@ module.exports = {
       {
         test: /\.css$/i,
         use:  [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          MiniCssExtractPlugin.loader,
           {
             loader:'css-loader',
             options: {
@@ -39,7 +37,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|ico|svg)$/,
+        test: /\.(png|jpg|gif|ico|svg|webp|jpeg)$/,
         use: [
           'file-loader?name=./images/[name].[ext]',
           {
@@ -99,9 +97,6 @@ module.exports = {
       template: './src/pages/about/about.html',
       filename: 'about.html'
     }),
-    new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+    new WebpackMd5Hash()
   ]
 };
