@@ -37,7 +37,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|ico|svg|webp|jpeg)$/,
+        test: /\.(png|gif|ico|svg|webp|jpe?g)$/,
         use: [
           'file-loader?name=./images/[name].[ext]',
           {
@@ -47,6 +47,7 @@ module.exports = {
                 progressive: true,
                 quality: 65
               },
+              // optipng.enabled: false will disable optipng
               optipng: {
                 enabled: false,
               },
@@ -57,6 +58,7 @@ module.exports = {
               gifsicle: {
                 interlaced: false,
               },
+              // the webp option will enable WEBP
               webp: {
                 quality: 75
               }

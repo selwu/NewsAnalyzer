@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="<%=require('../../favicon.ico').default%>" type="image/x-icon">
   <title>NewsAnalizer</title>
 </head>
+<body>
 
 <section class="main">
   <header class="header">
@@ -43,7 +44,7 @@
 </section>
 
 <section class="author">
-  <img src="../../images/photo.jpeg" class="author_image" alt="фотография на которой изображен Александр Долгих">
+  <img src="<%=require('../../images/photo.jpg').default%>" class="author_image" alt="фотография на которой изображен Александр Долгих">
   <div class="author_wrapper">
     <h3 class="author_title">Об авторе</h3>
     <p class="author_text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
@@ -54,7 +55,6 @@
 
 <footer class="footer">
   <p class="footer__copyright">&copy; 2019  Supersite</p>
-  </div>
   <nav class="navigation">
     <ul class="navigation_list">
       <li><a href="./index.html" class="navigation_link">Главная</a></li>
@@ -68,6 +68,6 @@
   </ul>
 </footer>
 
-<body>
+
 </body>
 </html>
