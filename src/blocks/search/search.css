@@ -1,0 +1,6 @@
+@import url('./__button/search__button.css');
+@import url('./__input/search__input.css');
+
+.search {
+  padding-top: 63px;
+}

@@ -1,0 +1,7 @@
+.main__wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  max-width: 608px;
+  margin: 0 auto;
+}

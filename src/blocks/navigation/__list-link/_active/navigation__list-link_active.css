@@ -1,0 +1,5 @@
+.navigation__list .navigation__list-link_active {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 27px;
+}
