@@ -4,4 +4,5 @@
   padding-bottom: 27px;
   cursor: default;
   pointer-events: none;
+  outline: none;
 }

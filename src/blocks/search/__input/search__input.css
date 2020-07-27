@@ -1,0 +1,28 @@
+.search__input {
+  box-sizing: inherit;
+  background-color: #fff;
+  padding: 21px 208px 21px 24px;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+}
+
+.search__input::placeholder {
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
+}
+
+.search__input:focus {
+  outline: none;
+  box-shadow: 0px 0px 7px 3px #2f71e5;
+}
