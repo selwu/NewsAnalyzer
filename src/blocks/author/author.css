@@ -1,12 +1,12 @@
-@import url('./__image/author__image.css');
-@import url('./__text/author__text.css');
-@import url('./__title/author__title.css');
-@import url('./__wrapper/author__wrapper.css');
+@import url(./__image/author__image.css);
+@import url(./__text/author__text.css);
+@import url(./__title/author__title.css);
+@import url(./__wrapper/author__wrapper.css);
 
 .author {
-  max-width: 1440px;
+  max-width: 1336px;
   min-height: 464px;
   margin: 0 auto;
   display: flex;
-  padding: 80px 0 83px 104px;
+  padding: 80px 0 76px 104px;
 }

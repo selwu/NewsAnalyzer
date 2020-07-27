@@ -8,6 +8,7 @@
 @import url('../../blocks/reply/reply.css');
 @import url('../../blocks/search/search.css');
 @import url('../../blocks/preloader/preloader.css');
+@import url('../../blocks/link-animation/link-animation.css');
 
 body {
   min-height: 100vh;

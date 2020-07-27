@@ -15,8 +15,8 @@
     <h1 class="header__title"><a href="./index.html" class="header__title-link">NewsAnalyzer</a></h1>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__list-item"><a href="./index.html" class="navigation__list-link navigation__list-link_active">Главная</a></li>
-        <li class="navigation__list-item"><a href="./about.html" class="navigation__list-link">О проекте</a></li>
+        <li class="navigation__list-item"><a href="./index.html" class="navigation__list-link navigation__list-link_header navigation__list-link_active link-animation">Главная</a></li>
+        <li class="navigation__list-item"><a href="./about.html" class="navigation__list-link navigation__list-link_header link-animation">О проекте</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +44,11 @@
 </section>
 
 <section class="author">
-  <img src="<%=require('../../images/photo.jpg').default%>" class="author__image" alt="фотография на которой изображен Александр Долгих">
+  <picture>
+    <!-- <source media="(max-width: 799px)" srcset="">
+    <source media="(min-width: 800px)" srcset=""> -->
+    <img src="<%=require('../../images/photo.jpg').default%>" class="author__image" alt="фотография на которой изображен Александр Долгих">
+  </picture>
   <div class="author__wrapper">
     <h3 class="author__title">Об авторе</h3>
     <p class="author__text">
@@ -60,14 +64,14 @@
   <p class="footer__copyright">&copy; 2019  Supersite</p>
   <nav class="navigation">
     <ul class="navigation__list">
-      <li class="navigation__list-item"><a href="./index.html" class="navigation__list-link">Главная</a></li>
-      <li class="navigation__list-item"><a href="./about.html" class="navigation__list-link">О проекте</a></li>
-      <li class="navigation__list-item"><a href="https://praktikum.yandex.ru" class="navigation__list-link" target="_blank">Яндекс.Практикум</a></li>
+      <li class="navigation__list-item"><a href="./index.html" class="navigation__list-link navigation__list-link_footer link-animation">Главная</a></li>
+      <li class="navigation__list-item"><a href="./about.html" class="navigation__list-link navigation__list-link_footer link-animation">О проекте</a></li>
+      <li class="navigation__list-item"><a href="https://praktikum.yandex.ru" class="navigation__list-link navigation__list-link_footer link-animation" target="_blank">Яндекс.Практикум</a></li>
     </ul>
   </nav>
   <ul class="footer__social">
-    <li><a href="" class="footer__social-link" target="_blank"></a></li>
-    <li><a href="" class="footer__social-link" target="_blank"></a></li>
+    <li><a href="https://github.com/selwu" class="footer__social-link footer__social-link_github link-animation" target="_blank"></a></li>
+    <li><a href="https://www.facebook.com/alexander.dolgih" class="footer__social-link footer__social-link_facebook link-animation" target="_blank"></a></li>
   </ul>
 </footer>
 

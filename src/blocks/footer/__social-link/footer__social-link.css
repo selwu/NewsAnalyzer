@@ -1,0 +1,11 @@
+@import url(./_facebook/footer__social-link_facebook.css);
+@import url(./_github/footer__social-link_github.css);
+
+.footer__social-link {
+  display: block;
+  text-decoration: none;
+  margin: 0 0 0 26px ;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}

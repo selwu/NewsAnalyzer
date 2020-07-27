@@ -1,6 +1,6 @@
-@import url('./__image/reply__image.css');
-@import url('./__text/reply__text.css');
-@import url('./__title/reply__title.css');
+@import url(./__image/reply__image.css);
+@import url(./__text/reply__text.css);
+@import url(./__title/reply__title.css);
 
 .reply {
   display: none;

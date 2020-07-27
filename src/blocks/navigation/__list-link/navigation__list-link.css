@@ -1,12 +1,7 @@
-@import url('./_active/navigation__list-link_active.css');
+@import url(./_active/navigation__list-link_active.css);
+@import url(./_header/navigation__list-link_header.css);
+@import url(./_footer/navigation__list-link_footer.css);
 
 .navigation__list-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
   text-decoration: none;
-  color: #b6bcbf;
-  margin-left: 36px;
 }

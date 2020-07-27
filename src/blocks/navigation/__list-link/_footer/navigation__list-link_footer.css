@@ -1,12 +1,9 @@
-.reply__text {
-  max-width: 300px;
+.navigation__list-link_footer {
   font-family: Roboto, arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  text-align: center;
-  color: #b6bcbf;
-  margin: 0 auto;
-  padding: 15px 0 0;
+  color: #1A1B22;
+  margin-left: 40px;
 }
