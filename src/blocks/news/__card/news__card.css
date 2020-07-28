@@ -1,4 +1,5 @@
 .news__card {
   height: 576px;
   background-color: skyblue;
+  border-radius: 16px;
 }

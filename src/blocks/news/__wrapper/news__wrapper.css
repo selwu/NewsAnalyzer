@@ -1,0 +1,10 @@
+.news__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 104px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
