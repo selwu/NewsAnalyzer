@@ -1,6 +1,10 @@
 @import url(./__social/footer__social.css);
 @import url(./__social-link/footer__social-link.css);
 @import url(./__copyright/footer__copyright.css);
+@import url(./__item/footer__item.css);
+@import url(./__link/footer__link.css);
+@import url(./__list/footer__list.css);
+@import url(./__menu/footer__menu.css);
 
 .footer {
   max-width: 1232px;

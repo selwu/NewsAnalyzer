@@ -1,0 +1,10 @@
+@import url(./__container/info__container.css);
+@import url(./__text/info__text.css);
+@import url(./__title/info__title.css);
+
+.info {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 104px 72px;
+}

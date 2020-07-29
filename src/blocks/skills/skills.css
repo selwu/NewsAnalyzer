@@ -1,0 +1,10 @@
+@import url(./__container/skills__container.css);
+@import url(./__image/skills__image.css);
+@import url(./__item/skills__item.css);
+@import url(./__subtitle/skills__subtitle.css);
+@import url(./__title/skills__title.css);
+@import url(./__wrapper/skills__wrapper.css);
+
+.skills {
+  background-color: #f5f6f7;
+}

@@ -1,7 +1,0 @@
-@import url(./_active/navigation__list-link_active.css);
-@import url(./_header/navigation__list-link_header.css);
-@import url(./_footer/navigation__list-link_footer.css);
-
-.navigation__list-link {
-  text-decoration: none;
-}
