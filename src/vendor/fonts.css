@@ -1,44 +1,44 @@
 @font-face {
   font-family: 'Roboto';
-  src:
-      url(./fonts/Roboto-Regular.woff) format('woff'),
-      url(./fonts/Roboto-Regular.ttf) format('truetype');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src:
+       url(../vendor/fonts/roboto-v20-latin_cyrillic-regular.woff2) format('woff2'),
+       url(../vendor/fonts/roboto-v20-latin_cyrillic-regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src:
-      url(./fonts/Roboto-Medium.woff) format('woff'),
-      url(./fonts/Roboto-Medium.ttf) format('truetype');
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
+  src:
+       url(../vendor/fonts/roboto-v20-latin_cyrillic-500.woff2) format('woff2'),
+       url(../vendor/fonts/roboto-v20-latin_cyrillic-500.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Roboto Slab';
-  src:
-      url(./fonts/RobotoSlab-Bold.woff) format('woff'),
-      url(./fonts/RobotoSlab-Bold.ttf) format('truetype');
-  font-weight: bold;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Slab';
-  src:
-      url(./fonts/RobotoSlab-Regular.woff) format('woff'),
-      url(./fonts/RobotoSlab-Regular.ttf) format('truetype');
   font-weight: normal;
+  src:
+       url(../vendor/fonts/roboto-slab-v12-latin_cyrillic-regular.woff2) format('woff2'),
+       url(../vendor/fonts/roboto-slab-v12-latin_cyrillic-regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
   font-style: normal;
+  font-weight: bold;
+  src:
+       url(../vendor/fonts/roboto-slab-v12-latin_cyrillic-700.woff2) format('woff2'),
+       url(../vendor/fonts/roboto-slab-v12-latin_cyrillic-700.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:
-      url(./fonts/SourceSansPro-Regular.woff) format('woff'),
-      url(./fonts/SourceSansPro-Regular.ttf) format('truetype');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src:
+       url(../vendor/fonts/source-sans-pro-v13-latin_cyrillic-regular.woff2) format('woff2'),
+       url(../vendor/fonts/source-sans-pro-v13-latin_cyrillic-regular.woff) format('woff');
 }
