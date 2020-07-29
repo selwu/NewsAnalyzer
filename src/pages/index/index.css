@@ -11,6 +11,7 @@
 @import url(../../blocks/link-animation/link-animation.css);
 @import url(../../blocks/button/button.css);
 @import url(../../blocks/news/news.css);
+@import url(../../blocks/news-card/news-card.css);
 
 body {
   min-height: 100vh;

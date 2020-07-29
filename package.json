@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --watch",
+    "dev": "webpack-dev-server --mode development --open --watch",
     "deploy": "gh-pages -d dist"
   },
   "repository": {

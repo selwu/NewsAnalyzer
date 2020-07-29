@@ -1,0 +1,10 @@
+.news-card__image {
+  width: 100%;
+  padding-bottom: 68%;
+  background-image: url(../../../images/background-body.jpg);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

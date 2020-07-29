@@ -1,0 +1,7 @@
+.news-card__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 45.2%;
+  padding: 20px 24px 24px;
+}
