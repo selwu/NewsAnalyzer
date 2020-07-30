@@ -6,6 +6,8 @@
 @import url(../../blocks/skills/skills.css);
 @import url(../../blocks/author/author.css);
 @import url(../../blocks/footer/footer.css);
+@import url(../../blocks/history/history.css);
+@import url(../../blocks/story-card/story-card.css);
 
 body {
   min-height: 100vh;

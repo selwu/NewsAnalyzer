@@ -1,0 +1,7 @@
+.history__header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 72px 112px 64px 104px;
+}

@@ -1,0 +1,6 @@
+.hisrory__card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  grid-column-gap: 16px;
+}

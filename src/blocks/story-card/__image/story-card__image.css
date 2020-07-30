@@ -1,0 +1,6 @@
+.story-card__image {
+  width: 64px;
+  height: 64px;
+  background-color: skyblue;
+  border-radius: 50%;
+}
