@@ -1,0 +1,6 @@
+.table__days {
+  grid-area: days;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}

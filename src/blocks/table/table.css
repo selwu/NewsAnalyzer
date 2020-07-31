@@ -1,0 +1,19 @@
+@import url(./__cell/table__cell.css);
+@import url(./__container/table__container.css);
+@import url(./__date-month/table__date-month.css);
+@import url(./__date/table__date.css);
+@import url(./__days-item/table__days-item.css);
+@import url(./__days-number/table__days-number.css);
+@import url(./__days/table__days.css);
+@import url(./__header-wrapper/table__header-wrapper.css);
+@import url(./__header/table__header.css);
+@import url(./__line-digit/table__line-digit.css);
+@import url(./__line-top/table__line-top.css);
+@import url(./__line-bottom/table__line-bottom.css);
+@import url(./__title/table__title.css);
+@import url(./__total/table__total.css);
+@import url(./__wrapper/table__wrapper.css);
+
+.table {
+  background: #f5f6f7;
+}
