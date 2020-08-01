@@ -4,6 +4,7 @@
 @import url(./__link/history__link.css);
 @import url(./__title/history__title.css);
 @import url(./__wrapper/history__wrapper.css);
+@import url(./__pagination/history__pagination.css);
 @import url(./__arrow/_position/history__arrow_position_left.css);
 @import url(./__arrow/_position/history__arrow_position_right.css);
 

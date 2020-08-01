@@ -1,0 +1,15 @@
+.history__arrow_position_left {
+  width: 40px;
+  height: 40px;
+  top: 145px;
+  left: 25px;
+  background-image: url(../../../../images/slider-left.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: auto;
+  cursor: pointer;
+}
+
+.history__arrow_position_left::after {
+  content: '';
+}

@@ -90,10 +90,12 @@
         <h2 class="history__title">История коммитов из GitHub</h2>
         <a href="https://github.com/selwu" class="history__link link-animation">Открыть в  Github  &gt;</a>
       </div>
-      <div class="hisrory__card-list">
+      <div class="hisrory__card-list swiper-container">
 
-        <article class="story-card">
-          <a href="" class="story-card__link">
+        <div class="swiper-wrapper">
+
+        <article class="story-card swiper-slide">
+          <a href="https://github.com/selwu" class="story-card__link">
             <p class="story-card__date">14 августа, 2019</p>
             <div class="story-card__container">
               <img src="<%=require('../../images/temp-photo.jpg')%>" alt="фото человека" class="story-card__image">
@@ -107,8 +109,8 @@
             </p>
           </a>
         </article>
-        <article class="story-card">
-          <a href="" class="story-card__link">
+        <article class="story-card swiper-slide">
+          <a href="https://github.com/selwu" class="story-card__link">
             <p class="story-card__date">14 августа, 2019</p>
             <div class="story-card__container">
               <img src="<%=require('../../images/temp-photo.jpg')%>" alt="фото человека" class="story-card__image">
@@ -122,8 +124,8 @@
             </p>
           </a>
         </article>
-        <article class="story-card">
-          <a href="" class="story-card__link">
+        <article class="story-card swiper-slide">
+          <a href="https://github.com/selwu" class="story-card__link">
             <p class="story-card__date">14 августа, 2019</p>
             <div class="story-card__container">
               <img src="<%=require('../../images/temp-photo.jpg')%>" alt="фото человека" class="story-card__image">
@@ -137,10 +139,44 @@
             </p>
           </a>
         </article>
+        <article class="story-card swiper-slide">
+          <a href="https://github.com/selwu" class="story-card__link">
+            <p class="story-card__date">14 августа, 2019</p>
+            <div class="story-card__container">
+              <img src="<%=require('../../images/temp-photo.jpg')%>" alt="фото человека" class="story-card__image">
+              <div class="story-card__wrapper">
+                <h2 class="story-card__author">Антон Долинин</h2>
+                <p class="story-card__mail">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="story-card__text">Emmet (formerly Zen Coding) is a web-
+              developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
+          </a>
+        </article>
+        <article class="story-card swiper-slide">
+          <a href="https://github.com/selwu" class="story-card__link">
+            <p class="story-card__date">14 августа, 2019</p>
+            <div class="story-card__container">
+              <img src="<%=require('../../images/temp-photo.jpg')%>" alt="фото человека" class="story-card__image">
+              <div class="story-card__wrapper">
+                <h2 class="story-card__author">Антон Долинин</h2>
+                <p class="story-card__mail">anton@yandex.ru</p>
+              </div>
+            </div>
+            <p class="story-card__text">Emmet (formerly Zen Coding) is a web-
+              developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
+          </a>
+        </article>
+
+
 
       </div>
-      <a href="" class="history__arrow history__arrow_position_left"></a>
-      <a href="" class="history__arrow history__arrow_position_right"></a>
+      <div class="history__pagination swiper-pagination"></div>
+      <div class="swiper-button-next history__arrow history__arrow_position_right"></div>
+      <div class="swiper-button-prev history__arrow history__arrow_position_left"></div>
+    </div>
     </div>
   </aside>
 

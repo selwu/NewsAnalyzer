@@ -1,6 +1,32 @@
 .hisrory__card-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
   justify-content: center;
-  grid-column-gap: 16px;
+  padding: 0 104px 70px;
+  width: 100%;
+  z-index: 1;
+}
+
+.hisrory__card-list::after {
+  width: 88px;
+  height: 288px;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  z-index: 2;
+}
+
+.hisrory__card-list::before {
+  width: 88px;
+  height: 288px;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+  z-index: 2;
 }
