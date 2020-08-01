@@ -6,3 +6,16 @@
   pointer-events: none;
   outline: none;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .header__link_active_index {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__link_active_index {
+    padding-bottom: 17px;
+  }
+}

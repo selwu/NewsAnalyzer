@@ -6,4 +6,20 @@
   min-height: 576px;
   background-image: url(../../images/background-body.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 860px) {
+  .main {
+    min-height: 400px;
+    background-image: url(../../images/bg-ipad.jpg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    min-height: 536px;
+    background-image: url(../../images/bg-se.jpg);
+  }
 }

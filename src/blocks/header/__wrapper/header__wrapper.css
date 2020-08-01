@@ -8,3 +8,15 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1023px) {
+  .header__wrapper {
+    min-height: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    min-height: 56px;
+  }
+}

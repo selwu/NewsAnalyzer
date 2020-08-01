@@ -25,7 +25,6 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        sideEffects: true,
         use:  [
           {
             loader: MiniCssExtractPlugin.loader,

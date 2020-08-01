@@ -8,3 +8,17 @@
   color: #fff;
   margin: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .header__title {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
