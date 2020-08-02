@@ -10,10 +10,15 @@
   margin: 0;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1023px) {
+  .main__text {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .main__text {
     font-size: 20px;
     line-height: 26px;
-    padding-top: 16px;
   }
 }

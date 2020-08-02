@@ -10,3 +10,10 @@
 .button_styles_news:hover {
   opacity: .8;
 }
+
+@media screen and (max-width: 1200px) {
+  .button_styles_news {
+    width: 240px;
+    height: 56px;
+  }
+}

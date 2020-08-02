@@ -1,7 +1,12 @@
 .news-card__container {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
-  height: 45.2%;
   padding: 20px 24px 24px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .news-card__container {
+    padding: 16px;
+  }
 }

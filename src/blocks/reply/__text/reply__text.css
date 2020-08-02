@@ -10,3 +10,10 @@
   margin: 0 auto;
   padding: 15px 0 0;
 }
+
+@media screen and (max-width: 767px) {
+  .reply__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

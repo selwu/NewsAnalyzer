@@ -8,3 +8,9 @@
   align-items: center;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1023px) {
+  .news__wrapper {
+    padding: 40px;
+  }
+}

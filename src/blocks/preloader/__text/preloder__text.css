@@ -9,3 +9,9 @@
   margin: 0;
   padding-top: 178px;
 }
+
+@media screen and (max-width: 767px) {
+  .preloader__text {
+    padding-top: 100px;;
+  }
+}
