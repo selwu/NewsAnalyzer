@@ -11,3 +11,9 @@
   padding: 40px 104px 80px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1023px) {
+  .statistics {
+    padding: 32px 40px 40px;
+  }
+}

@@ -2,7 +2,6 @@
   display: grid;
   max-width: 1440px;
   box-sizing: border-box;
-  min-height: 866px;
   margin: 0 auto;
   padding: 80px 104px;
   grid-template-areas:
@@ -13,4 +12,11 @@
   grid-template-rows: 122px 28px 534px 20px;
   grid-template-columns: 104px minmax(200px, 1128px);
   grid-gap: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .table__wrapper {
+    padding: 40px 40px 43px;
+    grid-column-gap: 13px;
+  }
 }

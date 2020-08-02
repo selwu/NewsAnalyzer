@@ -7,7 +7,7 @@ let swiper = new Swiper('.swiper-container', {
   spaceBetween: 16,
   slidesPerGroup: 1,
   loop: false,
-  loopFillGroupWithBlank: true,
+  loopFillGroupWithBlank: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -17,5 +17,3 @@ let swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-console.log('that\'s ok');

@@ -7,3 +7,9 @@
   color: #1a1b22;
   margin: 24px 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .info__text {
+    margin-top: 16px;
+  }
+}

@@ -2,3 +2,9 @@
   margin: 10px 0 0 39px;
   padding: 0;
 }
+
+@media screen and (max-width: 1044px) {
+  .skills__item {
+    margin: 40px 0 0;
+  }
+}

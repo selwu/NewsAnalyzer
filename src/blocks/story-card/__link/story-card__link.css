@@ -15,3 +15,11 @@
 .story-card__link:hover {
   box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
 }
+
+
+@media screen and (max-width: 1023px) {
+  .story-card__link {
+    width: 336px;
+    height: 242px;
+  }
+}
