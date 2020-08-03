@@ -22,3 +22,9 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    line-height: 40px;
+  }
+}

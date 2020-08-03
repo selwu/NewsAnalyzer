@@ -13,3 +13,9 @@
   text-transform: uppercase;
   color: #B6BCBF;
 }
+
+@media screen and (max-width: 767px) {
+  .table__line-top {
+    display: none;
+  }
+}

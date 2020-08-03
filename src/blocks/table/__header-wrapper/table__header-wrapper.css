@@ -12,3 +12,10 @@
   padding-top: 48px;
   padding-bottom: 11px;
 }
+
+@media screen and (max-width: 767px) {
+  .table__header-wrapper  {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+}

@@ -13,3 +13,9 @@
 .history__arrow_position_right::after {
   content: '';
 }
+
+@media screen and (max-width: 1023px) {
+  .history__arrow_position_right {
+    display: none;
+  }
+}

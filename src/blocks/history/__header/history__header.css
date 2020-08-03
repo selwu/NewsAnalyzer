@@ -13,3 +13,9 @@
     padding: 40px 48px 32px 40px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .history__header {
+    padding: 32px 16px 16px;
+  }
+}

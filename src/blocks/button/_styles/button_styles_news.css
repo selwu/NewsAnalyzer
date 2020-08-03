@@ -17,3 +17,10 @@
     height: 56px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .button_styles_news {
+    width: 288px;
+    height: 56px;
+  }
+}

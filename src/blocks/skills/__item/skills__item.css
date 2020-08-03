@@ -8,3 +8,17 @@
     margin: 40px 0 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .skills__item {
+    margin: 39px 0 0;
+  }
+
+  .skills__item:nth-of-type(3) {
+    margin-top: 30px;
+  }
+
+  .skills__item:nth-of-type(4) {
+    margin-top: 30px;
+  }
+}

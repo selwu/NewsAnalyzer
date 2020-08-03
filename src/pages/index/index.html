@@ -49,7 +49,7 @@
   <div class="news__wrapper">
     <div class="news__result-wrapper">
       <h2 class="news__title">Результаты поиска</h2>
-      <a href="./paper.html" class="news__link-analytics link-animation">Посмотреть аналитику &gt;</a>
+      <a href="./paper.html" class="news__link-analytics link-animation">Посмотреть аналитику</a>
     </div>
     <article class="news__list">
 
@@ -97,10 +97,12 @@
   </div>
 </section>
 
-<!-- <section class="author">
-  <picture>
+<section class="author">
+  <picture class="author__image">
+    <source srcset="<%=require('../../images/image-se.jpg')%>" media="(max-width: 767px)">
     <source srcset="<%=require('../../images/photo-ipad.jpg')%>" media="(max-width: 1023px)">
-    <img src="<%=require('../../images/photo.jpg')%>" class="author__image" alt="фотография на которой будет изображен Александр Долгих">
+    <source srcset="<%=require('../../images/photo.jpg')%>">
+    <img srcset="<%=require('../../images/photo.jpg')%>" alt="фотография на которой будет изображен Александр Долгих">
   </picture>
   <div class="author__wrapper">
     <h3 class="author__title">Об авторе</h3>
@@ -112,9 +114,9 @@
       Если хотите, оставьте свои контакты: email и телефон. Так заказчики смогут с вами связаться.
     </p>
   </div>
-</section> -->
+</section>
 
-<!-- <footer class="footer">
+<footer class="footer">
   <p class="footer__copyright">&copy; 2019  Supersite</p>
   <nav class="footer__menu">
     <ul class="footer__list">
@@ -127,7 +129,7 @@
     <li><a href="https://github.com/selwu" class="footer__social-link footer__social-link_github link-animation" target="_blank"></a></li>
     <li><a href="https://www.facebook.com/alexander.dolgih" class="footer__social-link footer__social-link_facebook link-animation" target="_blank"></a></li>
   </ul>
-</footer> -->
+</footer>
 
 </body>
 </html>

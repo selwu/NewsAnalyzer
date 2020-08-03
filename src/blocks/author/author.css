@@ -17,3 +17,10 @@
     padding: 40px 40px 48px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .author {
+    flex-flow: column;
+    padding: 0 0 30px;
+  }
+}

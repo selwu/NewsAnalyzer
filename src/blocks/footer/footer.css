@@ -7,6 +7,7 @@
 @import url(./__menu/footer__menu.css);
 
 .footer {
+  box-sizing: border-box;
   max-width: 1232px;
   min-height: 80px;
   display: flex;
@@ -16,10 +17,21 @@
   padding: 0 104px;
 }
 
+
 @media screen and (max-width: 860px) {
   .footer {
     min-height: 64px;
     padding: 0 40px;
     justify-content: flex-start;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    min-height: 224px;
+    flex-wrap: wrap;
+    padding: 20px 16px 12px;
+    align-items: flex-start;
+  }
+
 }

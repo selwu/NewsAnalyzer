@@ -23,3 +23,11 @@
     height: 242px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .story-card__link {
+    width: 288px;
+    height: 264px;
+    padding: 16px;
+  }
+}

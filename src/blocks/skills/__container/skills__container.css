@@ -1,6 +1,14 @@
 .skills__container {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .skills__container {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
 }

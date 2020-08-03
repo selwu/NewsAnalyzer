@@ -16,3 +16,10 @@
     padding-top: 64px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .statistics__title {
+    padding:0 0 12px;
+    font-size: 30px;
+  }
+}

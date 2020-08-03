@@ -14,3 +14,9 @@
   color: #fff;
   padding: 15px 0;
 }
+
+@media screen and (max-width: 767px) {
+  .table__container {
+    padding-bottom: 0;
+  }
+}

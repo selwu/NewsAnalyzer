@@ -14,3 +14,9 @@
     padding: 40px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .news__wrapper {
+    padding: 32px 16px 47px;
+  }
+}

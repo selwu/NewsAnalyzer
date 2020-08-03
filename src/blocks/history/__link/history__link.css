@@ -29,10 +29,16 @@
 @media screen and (max-width: 1023px) {
   .history__link {
     align-self: flex-start;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .history__link::after {
-    top: 58px;
+    top: 47px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .history__link {
+    display: none;
   }
 }
