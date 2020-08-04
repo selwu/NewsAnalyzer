@@ -7,4 +7,6 @@
 @import url(./__wrapper/story-card__wrapper.css);
 @import url(./__link/story-card__link.css);
 
-
+.story-card {
+  flex-shrink: 1;
+}

@@ -1,12 +1,13 @@
 .hisrory__card-list {
   position: relative;
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   display: flex;
   flex-flow: row;
-  justify-content: center;
-  width: 100%;
-  gap: 16px;
+  justify-content: center; */
+  /* width: 100%; */
+  /* gap: 16px; */
   z-index: 1;
+  padding-bottom: 71px;
 }
 
 .hisrory__card-list::after {
@@ -33,7 +34,7 @@
 
 @media screen and (max-width: 1023px) {
   .hisrory__card-list {
-    gap: 8px;
+    padding-bottom: 54px;
   }
 
   .hisrory__card-list::after {
@@ -42,5 +43,11 @@
 
   .hisrory__card-list::before {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hisrory__card-list {
+    padding: 0;
   }
 }

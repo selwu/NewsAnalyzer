@@ -3,11 +3,10 @@ import { Swiper, Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 let swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 16,
-  slidesPerGroup: 1,
+  slidesPerView: 'auto',
+  spaceBetween: 8,
+  centeredSlides: true,
   loop: false,
-  loopFillGroupWithBlank: false,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -16,4 +15,9 @@ let swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    1024: {
+      spaceBetween: 16,
+    },
+  }
 });

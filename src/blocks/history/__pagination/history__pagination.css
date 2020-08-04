@@ -1,4 +1,8 @@
-.history__pagination {
-  bottom: 107px;
-  left: 50%;
+@media screen and (max-width: 767px) {
+  .hisrory__card-list>.history__pagination {
+    bottom: 75px;
+  }
 }
+
+
+
