@@ -1,0 +1,21 @@
+.reply__image {
+  width: 96px;
+  height: 96px;
+  background-image: url(../../../images/not-found_v1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 118px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .reply__image {
+    width: 70px;
+    height: 70px;
+    bottom: 60px;
+  }
+}

@@ -1,0 +1,44 @@
+.history__link {
+  position: relative;
+  text-decoration: none;
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  margin-top: 3px;
+  padding-right: 22px;
+}
+
+.history__link::after {
+  position: absolute;
+  content: '';
+  background-image: url(../../../images/right.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 8px;
+  right: 0;
+  width: 8px;
+  height: 15px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .history__link {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+
+  .history__link::after {
+    top: 47px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .history__link {
+    display: none;
+  }
+}

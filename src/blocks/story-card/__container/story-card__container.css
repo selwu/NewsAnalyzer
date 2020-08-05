@@ -1,0 +1,10 @@
+.story-card__container {
+  padding-top: 15px;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .story-card__container {
+    padding-top: 11px;
+  }
+}

@@ -1,0 +1,14 @@
+@import url(./_num/table__cell_num_1.css);
+@import url(./_num/table__cell_num_2.css);
+@import url(./_num/table__cell_num_3.css);
+@import url(./_num/table__cell_num_4.css);
+@import url(./_num/table__cell_num_5.css);
+@import url(./_num/table__cell_num_6.css);
+@import url(./_num/table__cell_num_7.css);
+
+.table__cell {
+  display: inline-block;
+  background-color: #2F71E5;
+  height: 24px;
+  padding-left: 5px;
+}

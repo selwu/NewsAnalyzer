@@ -1,0 +1,10 @@
+.table__total {
+  margin: 0;
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+  .table__total {
+    padding-left: 38px;
+  }
+}

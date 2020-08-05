@@ -1,0 +1,26 @@
+.button_styles_news {
+  width: 288px;
+  height: 64px;
+  color: #1A1B22;
+  border-radius: 80px;
+  background-color: #fff;
+  transition: all linear .1s;
+}
+
+.button_styles_news:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 1200px) {
+  .button_styles_news {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button_styles_news {
+    width: 288px;
+    height: 56px;
+  }
+}

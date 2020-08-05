@@ -1,0 +1,21 @@
+.history__arrow_position_right {
+  width: 40px;
+  height: 40px;
+  top: 145px;
+  right: 25px;
+  background-image: url(../../../../images/slider-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.history__arrow_position_right::after {
+  content: '';
+}
+
+@media screen and (max-width: 1023px) {
+  .history__arrow_position_right {
+    display: none;
+  }
+}

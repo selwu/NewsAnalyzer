@@ -1,0 +1,36 @@
+.news__link-analytics {
+  position: relative;
+  text-decoration: none;
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  padding-right: 12px;
+  padding-top: 5px;
+}
+
+.news__link-analytics::after {
+  position: absolute;
+  content: '';
+  background-image: url(../../../images/right.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 12px;
+  right: 0;
+  width: 8px;
+  height: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .news__link-analytics {
+    padding-top: 16px;
+  }
+
+  .news__link-analytics::after {
+    top: 23px;
+  }
+
+}

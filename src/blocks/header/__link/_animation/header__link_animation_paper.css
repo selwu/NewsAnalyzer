@@ -1,0 +1,7 @@
+.header__link_animation_paper {
+  transition: all linear .1s;
+}
+
+.header__link_animation_paper:hover {
+  color: #1a1b22;
+}

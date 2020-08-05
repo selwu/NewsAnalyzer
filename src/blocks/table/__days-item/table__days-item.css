@@ -1,0 +1,16 @@
+.table__days-item {
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #1A1B22;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .table__days-item {
+    line-height: 22px;
+    margin-top: 16px;
+  }
+}

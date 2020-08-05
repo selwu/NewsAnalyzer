@@ -1,0 +1,14 @@
+@import url(./_styles/button_styles_search.css);
+@import url(./_styles/button_styles_news.css);
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  align-items: center;
+}

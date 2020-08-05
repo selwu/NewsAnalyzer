@@ -1,0 +1,26 @@
+@import url(./__image/author__image.css);
+@import url(./__text/author__text.css);
+@import url(./__title/author__title.css);
+@import url(./__wrapper/author__wrapper.css);
+
+.author {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 104px 80px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .author {
+    padding: 40px 40px 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .author {
+    flex-flow: column;
+    padding: 0 0 30px;
+  }
+}

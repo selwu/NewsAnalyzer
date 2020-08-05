@@ -1,0 +1,22 @@
+.header__wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  min-height: 80px;
+  align-items: center;
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__wrapper {
+    min-height: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__wrapper {
+    min-height: 56px;
+  }
+}

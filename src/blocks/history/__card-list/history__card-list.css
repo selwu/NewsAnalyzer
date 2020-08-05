@@ -1,0 +1,53 @@
+.hisrory__card-list {
+  position: relative;
+  /* box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  justify-content: center; */
+  /* width: 100%; */
+  /* gap: 16px; */
+  z-index: 1;
+  padding-bottom: 71px;
+}
+
+.hisrory__card-list::after {
+  width: 88px;
+  height: 288px;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #f5f6f7 100%);
+  z-index: 2;
+}
+
+.hisrory__card-list::before {
+  width: 88px;
+  height: 288px;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, rgba(245, 246, 247, 0) 0%, #f5f6f7 100%);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1023px) {
+  .hisrory__card-list {
+    padding-bottom: 54px;
+  }
+
+  .hisrory__card-list::after {
+    display: none;
+  }
+
+  .hisrory__card-list::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hisrory__card-list {
+    padding: 0;
+  }
+}

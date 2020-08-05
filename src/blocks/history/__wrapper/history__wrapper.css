@@ -1,0 +1,20 @@
+.history__wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 606px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .history__wrapper {
+    min-height: 462px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .history__wrapper {
+    padding-bottom: 32px;
+  }
+}

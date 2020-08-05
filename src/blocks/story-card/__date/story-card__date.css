@@ -1,0 +1,10 @@
+.story-card__date {
+  font-family: Roboto, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b6bcbf;
+  padding: 0;
+  margin: 0;
+}

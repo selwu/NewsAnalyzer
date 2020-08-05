@@ -1,0 +1,15 @@
+.header__menu {
+  padding: 0 100px 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__menu {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    padding-right: 14px;
+  }
+}

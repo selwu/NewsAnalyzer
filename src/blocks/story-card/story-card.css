@@ -1,0 +1,12 @@
+@import url(./__author/story-card__author.css);
+@import url(./__container/story-card__container.css);
+@import url(./__date/story-card__date.css);
+@import url(./__image/story-card__image.css);
+@import url(./__mail/story-card__mail.css);
+@import url(./__text/story-card__text.css);
+@import url(./__wrapper/story-card__wrapper.css);
+@import url(./__link/story-card__link.css);
+
+.story-card {
+  flex-shrink: 1;
+}

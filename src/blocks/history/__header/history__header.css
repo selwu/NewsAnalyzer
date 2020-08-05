@@ -1,0 +1,21 @@
+.history__header {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 72px 112px 64px 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  .history__header {
+    padding: 40px 48px 32px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .history__header {
+    padding: 32px 16px 16px;
+  }
+}

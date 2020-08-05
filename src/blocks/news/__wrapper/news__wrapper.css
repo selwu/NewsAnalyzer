@@ -1,0 +1,22 @@
+.news__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 104px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .news__wrapper {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news__wrapper {
+    padding: 32px 16px 47px;
+  }
+}

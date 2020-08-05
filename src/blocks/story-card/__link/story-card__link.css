@@ -1,0 +1,33 @@
+.story-card__link {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 400px;
+  height: 288px;
+  border-radius: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding: 24px;
+  text-decoration: none;
+  transition: all linear .1s;
+}
+
+.story-card__link:hover {
+  box-shadow: 0 0 58px rgba(8, 29, 45, 0.1);
+}
+
+
+@media screen and (max-width: 1023px) {
+  .story-card__link {
+    width: 336px;
+    height: 242px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .story-card__link {
+    width: 288px;
+    height: 264px;
+    padding: 16px;
+  }
+}

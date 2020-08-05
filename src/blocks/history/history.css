@@ -1,0 +1,14 @@
+@import url(./__arrow/history__arrow.css);
+@import url(./__card-list/history__card-list.css);
+@import url(./__header/history__header.css);
+@import url(./__link/history__link.css);
+@import url(./__title/history__title.css);
+@import url(./__wrapper/history__wrapper.css);
+@import url(./__button/history__button.css);
+@import url(./__pagination/history__pagination.css);
+@import url(./__arrow/_position/history__arrow_position_left.css);
+@import url(./__arrow/_position/history__arrow_position_right.css);
+
+.history {
+  background-color: #f5f6f7;
+}

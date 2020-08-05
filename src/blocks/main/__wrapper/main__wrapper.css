@@ -1,0 +1,20 @@
+.main__wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  max-width: 608px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 860px) {
+  .main__wrapper {
+    max-width: 448px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .main__wrapper {
+    max-width: 288px;
+  }
+}

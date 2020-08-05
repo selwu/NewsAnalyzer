@@ -1,0 +1,15 @@
+@import url(../../../node_modules/swiper/swiper-bundle.css);
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/link-animation/link-animation.css);
+@import url(../../blocks/info/info.css);
+@import url(../../blocks/skills/skills.css);
+@import url(../../blocks/author/author.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/history/history.css);
+@import url(../../blocks/story-card/story-card.css);
+
+body {
+  min-height: 100vh;
+}

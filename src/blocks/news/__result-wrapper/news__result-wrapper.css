@@ -1,0 +1,14 @@
+.news__result-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .news__result-wrapper {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
