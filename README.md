@@ -1,7 +1,3 @@
-# NewsAnalyzer (В разработке)
-
-
-
 # NewsAnalyzer
 
 ##### version: 1.0.0
