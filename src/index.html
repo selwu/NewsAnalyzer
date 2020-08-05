@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Александр Долгих">
   <meta name="description" content="Сайт для поиска популярных новостей и статистике по ним">
-  <link rel="shortcut icon" href="<%=require('../../favicon.ico')%>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%=require('./favicon.ico')%>" type="image/x-icon">
   <title>NewsAnalizer</title>
 </head>
 <body>
@@ -49,7 +49,7 @@
   <div class="news__wrapper">
     <div class="news__result-wrapper">
       <h2 class="news__title">Результаты поиска</h2>
-      <a href="./paper.html" class="news__link-analytics link-animation">Посмотреть аналитику</a>
+      <a href="./analytics.html" class="news__link-analytics link-animation">Посмотреть аналитику</a>
     </div>
     <article class="news__list">
 
@@ -99,10 +99,10 @@
 
 <section class="author">
   <picture class="author__image">
-    <source srcset="<%=require('../../images/image-se.jpg')%>" media="(max-width: 767px)">
-    <source srcset="<%=require('../../images/photo-ipad.jpg')%>" media="(max-width: 1023px)">
-    <source srcset="<%=require('../../images/photo.jpg')%>">
-    <img srcset="<%=require('../../images/photo.jpg')%>" alt="фотография на которой будет изображен Александр Долгих">
+    <source srcset="<%=require('./images/image-se.jpg')%>" media="(max-width: 767px)">
+    <source srcset="<%=require('./images/photo-ipad.jpg')%>" media="(max-width: 1023px)">
+    <source srcset="<%=require('./images/photo.jpg')%>">
+    <img srcset="<%=require('./images/photo.jpg')%>" alt="фотография на которой будет изображен Александр Долгих">
   </picture>
   <div class="author__wrapper">
     <h3 class="author__title">Об авторе</h3>
