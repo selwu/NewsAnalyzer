@@ -1,7 +1,7 @@
 .news__list {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 400px);
   grid-gap: 16px 16px;
   padding: 64px 0;
   justify-content: center;

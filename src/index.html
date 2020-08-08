@@ -6,7 +6,7 @@
   <meta name="author" content="Александр Долгих">
   <meta name="description" content="Сайт для поиска популярных новостей и статистике по ним">
   <link rel="shortcut icon" href="<%=require('./favicon.ico')%>" type="image/x-icon">
-  <title>NewsAnalizer</title>
+  <title>NewsAnalyzer</title>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
     <p class="main__text">Введите в поиске любую тему и узнайте, насколько популярной она была в
       новостях за прошедшую неделю.
     </p>
-    <form class="search">
+    <form class="search" novalidate>
       <input type="text" class="search__input" pattern="\W+" minlength="3" placeholder="Введите тему новости" required>
       <button class="button button_styles_search" type="submit">Искать</button>
     </form>
@@ -51,48 +51,24 @@
       <h2 class="news__title">Результаты поиска</h2>
       <a href="./analytics.html" class="news__link-analytics link-animation">Посмотреть аналитику</a>
     </div>
-    <article class="news__list">
+    <section class="news__list">
 
-      <article class="news-card__wrapper">
-        <a class="news-card" href="#" target="_blank">
-          <div class="news-card__image"></div>
-          <div class="news-card__container">
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">Национальное достояние </h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система на
-            </p>
-            <p class="news-card__source">Лента.ру</p>
-          </div>
-        </a>
-      </article>
-      <article class="news-card__wrapper">
-        <a class="news-card" href="#" target="_blank">
-          <div class="news-card__image"></div>
-          <div class="news-card__container">
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">Национальное достояние - парки </h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="news-card__source">Лента.ру</p>
-          </div>
-        </a>
-      </article>
-      <article class="news-card__wrapper">
-        <a class="news-card" href="#" target="_blank">
-          <div class="news-card__image"></div>
-          <div class="news-card__container">
-            <p class="news-card__date">2 августа, 2019</p>
-            <h3 class="news-card__title">Национальное достояние </h3>
-            <p class="news-card__text">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система на
-            </p>
-            <p class="news-card__source">Лента.ру</p>
-          </div>
-        </a>
-      </article>
+      <template class="news-card-template">
+        <article class="news-card__wrapper">
+          <a class="news-card" href="#" target="_blank">
+            <div class="news-card__image"></div>
+            <div class="news-card__container">
+              <p class="news-card__date">2 августа, 2019</p>
+              <h3 class="news-card__title">Национальное достояние - парки </h3>
+              <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+              </p>
+              <p class="news-card__source">Лента.ру</p>
+            </div>
+          </a>
+        </article>
+      </template>
 
-    </article>
+    </section>
     <button class="button button_styles_news">Показать еще</button>
   </div>
 </section>

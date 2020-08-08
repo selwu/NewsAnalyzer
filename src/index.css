@@ -11,6 +11,7 @@
 @import url(blocks/button/button.css);
 @import url(blocks/news/news.css);
 @import url(blocks/news-card/news-card.css);
+@import url(blocks/visible/vidible.css);
 
 body {
   min-height: 100vh;

@@ -11,6 +11,11 @@
   transition: all linear .1s;
 }
 
+.button_styles_search:focus {
+  box-shadow: 0px 0px 7px 3px #2f71e5;
+  outline: none;
+}
+
 .button_styles_search:hover {
   background: #347eff;
   outline: none;
