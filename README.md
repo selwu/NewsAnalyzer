@@ -1,7 +1,3 @@
-# NewsAnalyzer (В разработке)
-
-
-
 # NewsAnalyzer
 
 ##### version: 1.0.0
@@ -23,7 +19,7 @@ $ npm run dev
 
 ## О проекте:
 
-**сервис для анализа происходящих в мире событий**
+**Сервис для анализа происходящих в мире событий**
 
 #### Стек:
 * HTML5, CSS3(Flexbox + Grid), API, JavaScript ES6, БЭМ, Webpack
