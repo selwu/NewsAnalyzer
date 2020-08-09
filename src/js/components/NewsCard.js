@@ -1,7 +1,7 @@
 export  default class NewsCard {
   static _template = document.querySelector('.news-card-template').content
 
-  constructor([source, title, description, url, urlToImage, publishedAt]) {
+  constructor(source, title, description, url, urlToImage, publishedAt) {
     this._author = source.name;
     this._title = title;
     this._description = description;

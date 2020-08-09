@@ -6,12 +6,12 @@ export default class NewsCardList {
   }
 
   _addCard = (cardItem) => {
-    const card = this._createCard([cardItem.source, cardItem.title, cardItem.description, cardItem.url, cardItem.urlToImage, cardItem.publishedAt]);
+    const card = this._createCard(cardItem.source, cardItem.title, cardItem.description, cardItem.url, cardItem.urlToImage, cardItem.publishedAt);
     this._container.append(card);
   }
 
   toRender = (articles) => {
-    articles.forEach(article => {
+    articles.slice(0, 3).forEach(article => {
       this._addCard(article);
     })
   }
