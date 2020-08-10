@@ -22,7 +22,8 @@ const container = document.querySelector('.news__list');
 const newsCard = (...arg) =>new NewsCard(...arg).create();
 const newCardList = new NewsCardList(container, newsCard);
 const newsApi = new NewsApi(configNewsApi);
-const dataStorage = new DataStorage(sessionStorage);
+const dataStorage = new DataStorage();
+
 
 
 form.addEventListener('submit', evt => {
@@ -32,7 +33,8 @@ form.addEventListener('submit', evt => {
   preloader.classList.add('visible');
   newsApi.getNews(inputSearch.value)
     .then(data => {
-      dataStorage.setData(data);
+      dataStorage.setData('news', data);
+      dataStorage.setData('search-input', inputSearch.value)
       if (data.articles.length === 0) {
         preloader.classList.remove('visible');
         reply.classList.add('visible');
@@ -41,10 +43,11 @@ form.addEventListener('submit', evt => {
         newCardList.toRender(data.articles);
         preloader.classList.remove('visible');
       }
-  })
+    })
     .catch(onerror => {
       preloader.classList.remove('visible');
       errorSearch.classList.add('visible');
       console.error(onerror);
     })
 })
+

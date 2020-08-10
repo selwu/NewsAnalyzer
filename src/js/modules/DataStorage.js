@@ -1,13 +1,12 @@
 export default class DataStorage {
-  constructor(storage) {
-    this._storage = storage;
+  constructor() {
   }
 
-  setData = (data) => {
-
+  setData = (key, data) => {
+    localStorage.setItem(key.toString(), JSON.stringify(data));
   }
 
-  getData = () => {
-
+  getData = (key) => {
+    return JSON.parse(localStorage.getItem(key.toString()));
   }
 }

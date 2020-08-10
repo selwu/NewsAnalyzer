@@ -6,7 +6,6 @@ export default class CommitCardList {
   }
 
   _addCard = (cardItem) => {
-    console.log(cardItem);
     const name = cardItem.commit.committer.name;
     const email = cardItem.commit.committer.email;
     const date = cardItem.commit.committer.date;
