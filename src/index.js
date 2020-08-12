@@ -3,6 +3,7 @@ import NewsCard from "./js/components/NewsCard";
 import NewsCardList from "./js/components/NewsCardList";
 import NewsApi from "./js/modules/NewsApi";
 import DataStorage from "./js/modules/DataStorage";
+import SearchInput from "./js/components/SearchInput";
 
 const form = document.querySelector('.search');
 const buttonSearch = document.querySelector('.button_styles_search');
@@ -39,8 +40,9 @@ form.addEventListener('submit', evt => {
         preloader.classList.remove('visible');
         reply.classList.add('visible');
       } else {
+        const dataNews = dataStorage.getData('news');
         newsBlock.classList.add('visible');
-        newCardList.toRender(data.articles);
+        newCardList.toRender(dataNews.articles);
         preloader.classList.remove('visible');
       }
     })

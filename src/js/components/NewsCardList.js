@@ -11,7 +11,7 @@ export default class NewsCardList {
   }
 
   toRender = (articles) => {
-    articles.slice(0, 3).forEach(article => {
+    articles.forEach(article => {
       this._addCard(article);
     })
   }

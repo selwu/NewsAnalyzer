@@ -1,6 +1,6 @@
 export default class Statistics {
-  constructor() {
-
+  constructor(localData = {}) {
+    this._localData = localData;
   }
 
 }
