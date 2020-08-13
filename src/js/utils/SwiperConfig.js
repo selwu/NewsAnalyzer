@@ -1,7 +1,6 @@
 
 export default class SwiperConfig {
-  constructor() {
-  }
+
   static getSwiperContainer() {
     return '.swiper-container';
   }

@@ -1,5 +1,5 @@
-export  default class NewsCard {
-  static _template = document.querySelector('.news-card-template').content
+export default class NewsCard {
+  static _template = document.querySelector('.news-card-template').content;
 
   constructor(source, title, description, url, urlToImage, publishedAt) {
     this._author = source.name;
@@ -15,16 +15,22 @@ export  default class NewsCard {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-    }
+    };
 
     this._card = NewsCard._template.cloneNode(true);
-    this._date = this._date.toLocaleString("ru", _options);
-    this._card.querySelector('.news-card__image').setAttribute('style', `background-image: url(${this._image})`);
+    this._date = this._date.toLocaleString('ru', _options);
+    this._card
+      .querySelector('.news-card__image')
+      .setAttribute('style', `background-image: url(${this._image})`);
     this._card.querySelector('.news-card__title').textContent = this._title;
-    this._card.querySelector('.news-card__text').textContent = this._description;
+    this._card.querySelector(
+      '.news-card__text'
+    ).textContent = this._description;
     this._card.querySelector('.news-card__source').textContent = this._author;
     this._card.querySelector('.news-card__date').textContent = this._date;
-    this._card.querySelector('.news-card').setAttribute('href', `${this._link}`);
+    this._card
+      .querySelector('.news-card')
+      .setAttribute('href', `${this._link}`);
     return this._card;
-  }
+  };
 }

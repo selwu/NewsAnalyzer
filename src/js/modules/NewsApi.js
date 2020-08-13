@@ -1,3 +1,5 @@
+import { DATE_FROM_DAYS_AGO } from '../constants/constants';
+
 export default class NewsApi {
   constructor(option) {
     this._url = option.baseUrl;
@@ -6,15 +8,15 @@ export default class NewsApi {
 
   getNews = (keyWord) => {
     this._date = new Date();
-    this._date.setDate(this._date.getDate() - 7);
+    this._date.setDate(this._date.getDate() - DATE_FROM_DAYS_AGO);
     this._date = this._date.toISOString();
 
-    return fetch(`${this._url}/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&from=${this._date}&q=${'Владимир Путин'}&apiKey=${this._key}`)
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(`error ${res.status}`);
-      })
-  }
+    return fetch(
+      `${this._url}/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&from=${this._date}&q=${'Владимир Путин'}&apiKey=${this._key}`).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject(`error ${res.status}`);
+    });
+  };
 }

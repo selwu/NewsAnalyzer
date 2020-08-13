@@ -28,7 +28,8 @@
       новостях за прошедшую неделю.
     </p>
     <form class="search" novalidate>
-      <input type="text" class="search__input" pattern="\W+" minlength="3" placeholder="Введите тему новости" required>
+      <input id="search" type="text" class="search__input" placeholder="Введите тему новости" required>
+      <span id="search-error" class="search__error"></span>
       <button class="button button_styles_search" type="submit">Искать</button>
     </form>
   </div>
