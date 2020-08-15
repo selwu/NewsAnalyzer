@@ -1,4 +1,8 @@
 const DATE_FROM_DAYS_AGO = 7;
-const ERROR_MESSAGE = 'Поле не должно быть пустым';
+const ERROR_MESSAGE_INPUT = 'Поле не должно быть пустым';
+// https://praktikum.tk/news  https://newsapi.org
 
-export { DATE_FROM_DAYS_AGO, ERROR_MESSAGE };
+const BASE_URL_NEWS_API = 'https://newsapi.org';
+const KEY_NEWS_API = 'b9e026f62a0d460d9e07404a0e48c4a7';
+
+export { DATE_FROM_DAYS_AGO, ERROR_MESSAGE_INPUT, BASE_URL_NEWS_API, KEY_NEWS_API };

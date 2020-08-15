@@ -7,30 +7,17 @@ export default class NewsCard {
     this._description = description;
     this._link = url;
     this._image = urlToImage;
-    this._date = new Date(publishedAt);
+    this._date = publishedAt;
   }
 
   create = () => {
-    const _options = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    };
-
     this._card = NewsCard._template.cloneNode(true);
-    this._date = this._date.toLocaleString('ru', _options);
-    this._card
-      .querySelector('.news-card__image')
-      .setAttribute('style', `background-image: url(${this._image})`);
+    this._card.querySelector('.news-card__image').setAttribute('style', `background-image: url(${this._image})`);
     this._card.querySelector('.news-card__title').textContent = this._title;
-    this._card.querySelector(
-      '.news-card__text'
-    ).textContent = this._description;
+    this._card.querySelector('.news-card__text').textContent = this._description;
     this._card.querySelector('.news-card__source').textContent = this._author;
     this._card.querySelector('.news-card__date').textContent = this._date;
-    this._card
-      .querySelector('.news-card')
-      .setAttribute('href', `${this._link}`);
+    this._card.querySelector('.news-card').setAttribute('href', `${this._link}`);
     return this._card;
   };
 }

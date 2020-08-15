@@ -6,4 +6,8 @@ export default class DataStorage {
   getData = (key) => {
     return JSON.parse(localStorage.getItem(key.toString()));
   };
+
+  removeData = (key) => {
+    localStorage.removeItem(key);
+  }
 }

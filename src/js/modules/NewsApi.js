@@ -11,8 +11,7 @@ export default class NewsApi {
     this._date.setDate(this._date.getDate() - DATE_FROM_DAYS_AGO);
     this._date = this._date.toISOString();
 
-    return fetch(
-      `${this._url}/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&from=${this._date}&q=${'Владимир Путин'}&apiKey=${this._key}`).then((res) => {
+    return fetch(`${this._url}/v2/everything?language=ru&sortBy=publishedAt&pageSize=100&from=${this._date}&q=${keyWord}&apiKey=${this._key}`).then((res) => {
       if (res.ok) {
         return res.json();
       }
