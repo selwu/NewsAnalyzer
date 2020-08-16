@@ -32,7 +32,7 @@ const validateForm = new ValidateForm(errorText, ERROR_MESSAGE_INPUT, buttonSear
 const submitHandler = (evt) => {
   evt.preventDefault();
   dataStorage.removeData('news');
-  dataStorage.removeData('search-input');
+  dataStorage.removeData('keyWord');
   newsBlock.classList.remove('visible');
   container.textContent = '';
   errorSearch.classList.remove('visible');
@@ -46,9 +46,9 @@ const submitHandler = (evt) => {
         preloader.classList.remove('visible');
         reply.classList.add('visible');
       } else {
-        dataStorage.setData('news', data);
-        dataStorage.setData('search-input', inputSearch.value);
-        const dataNews = dataStorage.getData('news');
+        dataStorage.setData('newsData', data);
+        dataStorage.setData('keyWord', inputSearch.value);
+        const dataNews = dataStorage.getData('newsData');
         newCardList.toRender(dataNews.articles);
         preloader.classList.remove('visible');
         newsBlock.classList.add('visible');
@@ -92,9 +92,9 @@ const searchInput = new SearchInput([
 ])
 
 const startRenderHandler = () => {
-  if ('news' in localStorage) {
-    const dataInput = dataStorage.getData('search-input');
-    const dataNews = dataStorage.getData('news');
+  if ('newsData' in localStorage) {
+    const dataInput = dataStorage.getData('keyWord');
+    const dataNews = dataStorage.getData('newsData');
     inputSearch.value = dataInput;
     validateForm.isValidate(inputSearch);
     newsBlock.classList.add('visible');

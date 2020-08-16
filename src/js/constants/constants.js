@@ -1,6 +1,6 @@
 const DATE_FROM_DAYS_AGO = 7;
 const ERROR_MESSAGE_INPUT = 'Поле не должно быть пустым';
-// https://praktikum.tk/news  https://newsapi.org
+// https://praktikum.tk/news  https://newsapi.org  https://nomoreparties.co
 
 const BASE_URL_NEWS_API = 'https://newsapi.org';
 const KEY_NEWS_API = 'b9e026f62a0d460d9e07404a0e48c4a7';

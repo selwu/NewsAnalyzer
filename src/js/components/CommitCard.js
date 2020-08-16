@@ -10,14 +10,8 @@ export  default class NewsCard {
   }
 
   create = () => {
-    const _options = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    }
 
     this._card = NewsCard._template.cloneNode(true);
-    this._date = this._date.toLocaleString("ru", _options);
     this._card.querySelector('.story-card__image').setAttribute('src', `${this._avatar}`);
     this._card.querySelector('.story-card__text').textContent = this._message;
     this._card.querySelector('.story-card__author').textContent = this._name;

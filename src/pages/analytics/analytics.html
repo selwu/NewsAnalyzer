@@ -21,56 +21,73 @@
     </div>
   </header>
 
-  <section class="statistics">
-    <p class="statistics__menu"><a href="./index.html" class="statistics__menu-link link-animation">Главная</a> / Аналитика</p>
-    <h2 class="statistics__title">Вы спросили: «<span class="stastics__title-item">Путешествия</span>»</h2>
-    <p class="statistics__text">Новостей за неделю: <span class="statistics__digit">34 324</span></p>
-    <p class="statistics__text">Упоминаний в загаловках: <span class="statistics__digit">235</span></p>
-  </section>
+  <main class="main-container">
 
-  <main class="table">
-    <div class="table__wrapper">
-      <div class="table__header">
-        <h2 class="table__title">Аналитика по дням</h2>
-        <div class="table__header-wrapper">
-          <p class="table__date">дата <span class="table__date-month">(август)</span></p>
-          <p class="table__total">кол-во упоминаний</p>
+    <template class="template-analytics">
+      <section class="statistics">
+        <p class="statistics__menu"><a href="./index.html" class="statistics__menu-link link-animation">Главная</a> / Аналитика</p>
+        <h2 class="statistics__title">Вы спросили: «<span id="statistics-input"></span>»</h2>
+        <p class="statistics__text">Новостей за неделю: <span class="statistics__digit" id="statistics-all">0</span></p>
+        <p class="statistics__text">Упоминаний в загаловках: <span class="statistics__digit" id="statistics-title">0</span></p>
+      </section>
+      <section class="table">
+        <div class="table__wrapper">
+          <div class="table__header">
+            <h2 class="table__title">Аналитика по дням</h2>
+            <div class="table__header-wrapper">
+              <p class="table__date">дата (<span id="table-month">август</span>)</p>
+              <p class="table__total">кол-во упоминаний</p>
+            </div>
+          </div>
+          <div class="table__days">
+            <p class="table__days-item"><span class="table__days-number">19</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">20</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">21</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">22</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">23</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">24</span>, <span class="table__days-day">пн</span></p>
+            <p class="table__days-item"><span class="table__days-number">25</span>, <span class="table__days-day">пн</span></p>
+          </div>
+          <div class="table__line-top">
+            <p class="table__line-digit">0</p>
+            <p class="table__line-digit">25</p>
+            <p class="table__line-digit">50</p>
+            <p class="table__line-digit">75</p>
+            <p class="table__line-digit">100</p>
+          </div>
+          <div class="table__container">
+            <div class="table__cell table__cell_num_1">15</div>
+            <div class="table__cell table__cell_num_2">18</div>
+            <div class="table__cell table__cell_num_3">11</div>
+            <div class="table__cell table__cell_num_4">39</div>
+            <div class="table__cell table__cell_num_5">45</div>
+            <div class="table__cell table__cell_num_6">73</div>
+            <div class="table__cell table__cell_num_7">34</div>
+          </div>
+          <div class="table__line-bottom">
+            <p class="table__line-digit">0</p>
+            <p class="table__line-digit">25</p>
+            <p class="table__line-digit">50</p>
+            <p class="table__line-digit">75</p>
+            <p class="table__line-digit">100</p>
+          </div>
         </div>
-      </div>
-      <div class="table__days">
-        <p class="table__days-item"><span class="table__days-number">19</span>, пн</p>
-        <p class="table__days-item"><span class="table__days-number">20</span>, вт</p>
-        <p class="table__days-item"><span class="table__days-number">21</span>, ср</p>
-        <p class="table__days-item"><span class="table__days-number">22</span>, чт</p>
-        <p class="table__days-item"><span class="table__days-number">23</span>, пт</p>
-        <p class="table__days-item"><span class="table__days-number">24</span>, сб</p>
-        <p class="table__days-item"><span class="table__days-number">25</span>, вс</p>
-      </div>
-      <div class="table__line-top">
-        <p class="table__line-digit">0</p>
-        <p class="table__line-digit">25</p>
-        <p class="table__line-digit">50</p>
-        <p class="table__line-digit">75</p>
-        <p class="table__line-digit">100</p>
-      </div>
-      <div class="table__container">
-        <div class="table__cell table__cell_num_1">15</div>
-        <div class="table__cell table__cell_num_2">18</div>
-        <div class="table__cell table__cell_num_3">11</div>
-        <div class="table__cell table__cell_num_4">39</div>
-        <div class="table__cell table__cell_num_5">45</div>
-        <div class="table__cell table__cell_num_6">73</div>
-        <div class="table__cell table__cell_num_7">34</div>
-      </div>
-      <div class="table__line-bottom">
-        <p class="table__line-digit">0</p>
-        <p class="table__line-digit">25</p>
-        <p class="table__line-digit">50</p>
-        <p class="table__line-digit">75</p>
-        <p class="table__line-digit">100</p>
-      </div>
-    </div>
+      </section>
+    </template>
+
+<!--    <template class="template-date">-->
+<!--      <p class="table__days-item"><span class="table__days-number"></span>, <span class="table__days-day"></span></p>-->
+<!--    </template>-->
+
+<!--    <template class="template-cell">-->
+<!--      <div class="table__cell table__cell_num_1"></div>-->
+<!--    </template>-->
+
+
+
   </main>
+
+
 
 
   <footer class="footer">
