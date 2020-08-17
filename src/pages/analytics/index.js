@@ -4,17 +4,36 @@ import Statistics from '../../js/components/Statistics';
 import AnalyticsCalculate from '../../js/utils/AnalyticsCalculate';
 import DateFormatter from '../../js/utils/DateFormatter';
 
-const containerAnalytics = document.querySelector('.main-container');
-const dataStorage = new DataStorage();
-const dataLocal = {
-  keyWord: dataStorage.getData('keyWord'),
-  newsData: dataStorage.getData('newsData'),
+
+const startRenderHandler = () => {
+  if ('newsData' in localStorage) {
+    const containerDays = document.querySelector('.table__days');
+    const containerNumbers = document.querySelector('.table__container');
+    const containerMain = document.querySelector('.main-container');
+
+    const dataStorage = new DataStorage();
+    const dataLocal = {
+      keyWord: dataStorage.getData('keyWord'),
+      newsData: dataStorage.getData('newsData'),
+    };
+    const statistics = new Statistics(
+      dataLocal,
+      containerDays,
+      containerNumbers,
+      containerMain
+    );
+    const allMember = AnalyticsCalculate.calculateAllMember(
+      dataLocal.newsData,
+      dataLocal.keyWord
+    );
+    const totalTitleCount = AnalyticsCalculate.calculateTitle;
+    const totalSortArr = AnalyticsCalculate.calculateDaysWeek(
+      DateFormatter.formatterDateAnalytics,
+      allMember
+    );
+
+    statistics.render(totalTitleCount, totalSortArr);
+  }
 };
-const statistics = new Statistics(dataLocal, containerAnalytics);
-const analyticsCalculate = new AnalyticsCalculate(dataLocal);
-const totalTitleCount = analyticsCalculate.calcTitle();
-const totalSortArr = analyticsCalculate.calcDaysWeek(DateFormatter.formatterDateAnalytics);
 
-
-
-statistics.render(totalTitleCount, totalSortArr);
+document.addEventListener('DOMContentLoaded', startRenderHandler);
