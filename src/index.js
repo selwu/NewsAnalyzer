@@ -24,7 +24,7 @@ const configNewsApi = {
 };
 const container = document.querySelector('.news__list');
 const newsCard = (...arg) => new NewsCard(...arg).create();
-const newCardList = new NewsCardList(container, newsCard, DateFormatter.formatterDateSearch);
+const newCardList = new NewsCardList(container, newsCard, DateFormatter.formatterDateLocal);
 const newsApi = new NewsApi(configNewsApi);
 const dataStorage = new DataStorage();
 const validateForm = new ValidateForm(errorText, ERROR_MESSAGE_INPUT, buttonSearch, inputSearch);

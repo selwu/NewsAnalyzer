@@ -32,14 +32,13 @@ export default class AnalyticsCalculate {
   }
 
   // метод возвращает отсортированный по дням массив
-  calcDaysWeek() {
+  calcDaysWeek(formatterDateAnalytics) {
     return this._calcAllMember().reduce((objResult, dataItem) => {
-      const dateFormatter = new Date(dataItem.publishedAt);
-      dateFormatter.setHours(0, 0, 0, 0);
-      if (!objResult[dateFormatter.toISOString()]) {
-        objResult[dateFormatter.toISOString()] = 1;
+      const dateFormatter = formatterDateAnalytics(dataItem.publishedAt);
+      if (!objResult[dateFormatter]) {
+        objResult[dateFormatter] = 1;
       } else {
-        objResult[dateFormatter.toISOString()] += 1;
+        objResult[dateFormatter] += 1;
       }
       return objResult;
     }, {});

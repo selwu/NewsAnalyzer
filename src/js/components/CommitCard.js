@@ -4,13 +4,12 @@ export  default class NewsCard {
   constructor([name, email, date, message, avatar]) {
     this._name = name;
     this._email = email;
-    this._date = new Date(date);
+    this._date = date;
     this._message = message;
     this._avatar = avatar;
   }
 
   create = () => {
-
     this._card = NewsCard._template.cloneNode(true);
     this._card.querySelector('.story-card__image').setAttribute('src', `${this._avatar}`);
     this._card.querySelector('.story-card__text').textContent = this._message;
