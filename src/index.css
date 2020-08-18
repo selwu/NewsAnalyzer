@@ -13,6 +13,7 @@
 @import url(blocks/news/news.css);
 @import url(blocks/news-card/news-card.css);
 @import url(blocks/visible/vidible.css);
+@import url(blocks/hidden/hidden.css);
 
 body {
   min-height: 100vh;

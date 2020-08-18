@@ -69,8 +69,9 @@ const inputHandler = (event) => {
   validateForm.isValidate(event.target);
 }
 
-const moreNewsHandler = (event) => {
-
+const moreNewsHandler = () => {
+  const dataNews = dataStorage.getData('newsData');
+  newCardList.toRender(dataNews.articles, buttonMoreNews);
 }
 
 const searchInput = new SearchInput([

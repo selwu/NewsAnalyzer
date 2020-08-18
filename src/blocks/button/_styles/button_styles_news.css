@@ -11,6 +11,12 @@
   opacity: .8;
 }
 
+.button_styles_news:active {
+  outline: none;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .button_styles_news {
     width: 240px;
