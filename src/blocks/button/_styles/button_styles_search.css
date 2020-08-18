@@ -12,7 +12,7 @@
 }
 
 .button_styles_search:focus {
-  box-shadow: 0px 0px 7px 3px #2f71e5;
+  box-shadow: 0 0 7px 3px #2f71e5;
   outline: none;
 }
 
