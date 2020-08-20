@@ -1,0 +1,14 @@
+.search__error {
+  font-family: 'Roboto Slab', arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  padding-left: 21px;
+  color: #f5f6f7;
+}
+
+@media screen and (max-width: 767px) {
+  .search__error{
+    padding-left: 16px;
+  }
+}

@@ -1,20 +1,22 @@
-@import url('./__input/search__input.css');
+@import url(./__input/search__input.css);
+@import url(./__error/search__error.css);
+@import url(./__input/_disable/search__input_disable.css);
 
 .search {
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding-top: 64px;
+  margin-top: 64px;
 }
 
 @media screen and (max-width: 1023px) {
   .search {
-    padding-top: 24px;
+    margin-top: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .search {
-    padding-top: 64px;
+    margin-top: 64px;
   }
 }

@@ -1,7 +1,7 @@
 .button_styles_search {
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   width: 168px;
   height: 64px;
   border-radius: 100px;
@@ -9,6 +9,11 @@
   background: #2F71E5;
   box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
   transition: all linear .1s;
+}
+
+.button_styles_search:focus {
+  box-shadow: 0 0 7px 3px #2f71e5;
+  outline: none;
 }
 
 .button_styles_search:hover {
