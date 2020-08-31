@@ -70,11 +70,12 @@
   </section>
 
   <section class="author">
-    <picture class="author__image">
-      <source srcset="<%=require('../../images/image-se.jpg')%>" media="(max-width: 767px)">
-      <source srcset="<%=require('../../images/photo-ipad.jpg')%>" media="(max-width: 1023px)">
-      <source srcset="<%=require('../../images/photo.jpg')%>">
-      <img srcset="<%=require('../../images/photo.jpg')%>" alt="фотография на которой будет изображен Александр Долгих">
+
+    <picture>
+      <source srcset="<%=require('../../images/photo-se.jpeg')%>" media="(max-width: 767px)">
+      <source srcset="<%=require('../../images/photo-ipad.jpeg')%>" media="(max-width: 1023px)">
+      <source srcset="<%=require('../../images/photo.jpeg')%>">
+      <img class="author__image"srcset="<%=require('../../images/photo.jpeg')%>" alt="фотография">
     </picture>
     <div class="author__wrapper">
       <h3 class="author__title">Об авторе</h3>

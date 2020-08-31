@@ -5,7 +5,7 @@ import NewsApi from './js/modules/NewsApi';
 import DataStorage from './js/modules/DataStorage';
 import ValidateForm from './js/utils/ValidateForm';
 import SearchInput from './js/components/SearchInput';
-import { ERROR_MESSAGE_INPUT, BASE_URL_NEWS_API, KEY_NEWS_API, NUMBER_OF_CARDS } from './js/constants/constants';
+import { ERROR_MESSAGE_INPUT, BASE_URL_NEWS_API, KEY_NEWS_API, } from './js/constants/constants';
 import DateFormatter from './js/utils/DateFormatter';
 
 const form = document.querySelector('.search');
