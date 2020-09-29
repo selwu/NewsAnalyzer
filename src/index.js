@@ -5,7 +5,11 @@ import NewsApi from './js/modules/NewsApi';
 import DataStorage from './js/modules/DataStorage';
 import ValidateForm from './js/utils/ValidateForm';
 import SearchInput from './js/components/SearchInput';
-import { ERROR_MESSAGE_INPUT, BASE_URL_NEWS_API, KEY_NEWS_API, } from './js/constants/constants';
+import {
+  ERROR_MESSAGE_INPUT,
+  BASE_URL_NEWS_API,
+  KEY_NEWS_API,
+} from './js/constants/constants';
 import DateFormatter from './js/utils/DateFormatter';
 
 const form = document.querySelector('.search');
@@ -20,14 +24,23 @@ const errorText = document.querySelector('.search__error');
 
 const configNewsApi = {
   baseUrl: BASE_URL_NEWS_API,
-  key: KEY_NEWS_API
+  key: KEY_NEWS_API,
 };
 const container = document.querySelector('.news__list');
 const newsCard = (...arg) => new NewsCard(...arg).create();
-const newCardList = new NewsCardList(container, newsCard, DateFormatter.formatterDateLocal);
+const newCardList = new NewsCardList(
+  container,
+  newsCard,
+  DateFormatter.formatterDateLocal
+);
 const newsApi = new NewsApi(configNewsApi);
 const dataStorage = new DataStorage();
-const validateForm = new ValidateForm(errorText, ERROR_MESSAGE_INPUT, buttonSearch, inputSearch);
+const validateForm = new ValidateForm(
+  errorText,
+  ERROR_MESSAGE_INPUT,
+  buttonSearch,
+  inputSearch
+);
 
 const submitHandler = (evt) => {
   evt.preventDefault();
@@ -40,7 +53,8 @@ const submitHandler = (evt) => {
   preloader.classList.add('visible');
   validateForm.setButtonDeactive();
   validateForm.setInputDeactive();
-  newsApi.getNews(inputSearch.value)
+  newsApi
+    .getNews(inputSearch.value)
     .then((data) => {
       if (data.articles.length === 0) {
         preloader.classList.remove('visible');
@@ -62,35 +76,35 @@ const submitHandler = (evt) => {
     .finally(() => {
       validateForm.setButtonActive();
       validateForm.setInputActive();
-  })
-}
+    });
+};
 
 const inputHandler = (event) => {
   validateForm.isValidate(event.target);
-}
+};
 
 const moreNewsHandler = () => {
   const dataNews = dataStorage.getData('newsData');
   newCardList.toRender(dataNews.articles, buttonMoreNews);
-}
+};
 
 const searchInput = new SearchInput([
   {
     event: 'submit',
     callback: submitHandler,
-    element: form
+    element: form,
   },
   {
     event: 'input',
     callback: inputHandler,
-    element: inputSearch
+    element: inputSearch,
   },
   {
     event: 'click',
     callback: moreNewsHandler,
-    element: buttonMoreNews
-  }
-])
+    element: buttonMoreNews,
+  },
+]);
 
 const startRenderHandler = () => {
   if ('newsData' in localStorage) {
@@ -101,7 +115,7 @@ const startRenderHandler = () => {
     newsBlock.classList.add('visible');
     newCardList.toRender(dataNews.articles);
   }
-}
+};
 
 document.addEventListener('DOMContentLoaded', startRenderHandler);
 

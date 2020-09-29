@@ -15,7 +15,11 @@ const swiper = new Swiper(
 );
 const configGithub = 'https://api.github.com/repos/selwu/NewsAnalyzer/commits';
 const createCard = (...arg) => new CommitCard(...arg).create();
-const commitCardList = new CommitCardList(CardContainer, createCard, DateFormatter.formatterDateLocal);
+const commitCardList = new CommitCardList(
+  CardContainer,
+  createCard,
+  DateFormatter.formatterDateLocal
+);
 const githubApi = new GithubApi(configGithub);
 
 githubApi
