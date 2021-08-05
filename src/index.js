@@ -117,6 +117,8 @@ const startRenderHandler = () => {
   }
 };
 
+buttonSearch.addEventListener('click', () => )
+
 document.addEventListener('DOMContentLoaded', startRenderHandler);
 
 searchInput.setHandlers();
